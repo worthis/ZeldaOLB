@@ -194,8 +194,8 @@ void Texte::chercheText() {
         case 128 : texte = "You must not transform yourself here!!!"; break;
         case 129 : texte = "You cannot go in this village with this appearance !!!"; break;
         case 130 : texte = "Link, it's Pit. I am talking with you by telepathy. You must under no circumstances transform yourself in a village!*I will teleport you outside."; break;
-        case 131 : texte = "You find a sword!!!**Press Z (or W) to attack or hold Z (or W) to charg a spin attack."; break;
-        case 132 : texte = "You find the Map!!!*Press P to see the map of the Dungeon."; break;
+        case 131 : texte = "You find a sword!!!**Press A to attack or hold A to charg a spin attack."; break;
+        case 132 : texte = "You find the Map!!!*Press L2 to see the map of the Dungeon."; break;
         case 133 : texte = "You find the Compass!!!**The Boss and chests are now indicated on the map."; break;
         case 134 : texte = "You find the Boss Key.**Use it to reach his haunt."; break;
         case 135 : texte = "You find a small key.**Use it to unlock a door."; break;
@@ -223,8 +223,8 @@ void Texte::chercheText() {
             texte = "You defeated the monster of the mine???*Congratulations!!!"; idsuiv=144; break;
         case 144 : texte = "I am the chief of the workers, you say you were looking for me?"; idsuiv=145; break;
         case 145 : texte = "Take this bag full of bomb, it may help you."; break;
-        case 146 : texte = "You find the Bomb Bag!!!*And it's full!!!*Press ENTER to set them up, and X to put one down."; break;
-        case 147 : texte = "You find the Gloves!!!**Now you can lift light stones by pressing C."; break;
+        case 146 : texte = "You find the Bomb Bag!!!*And it's full!!!*Press START to set them up, and X to put one down."; break;
+        case 147 : texte = "You find the Gloves!!!**Now you can lift light stones by pressing B."; break;
         case 148 : 
             if (gpJeu->getJoueur()->hasObjet(O_ARC)) {id=50; chercheText();break;}
             texte = "I am the right hand man of the mayor, he sent me to save his daughter...*But I've been had, there is nothing to do against these ghosts..."; idsuiv=149; break;
@@ -292,8 +292,8 @@ void Texte::chercheText() {
         case 194 : texte = "You find the Great Fairy Bow!!!**Now you can shoot arrows with an incredible power!!!"; break;
         case 195 : texte = "You find the Triforce !!!"; break;
         
-        case 197 : texte = "Tutorial : Press SPACE to talk, read or open a chest, and ENTER to pass the texts on the screen on."; break;
-        case 198 : texte = "Press C to lift a light object."; break;
+        case 197 : texte = "Tutorial : Press Y to talk, read or open a chest, and START to pass the texts on the screen on."; break;
+        case 198 : texte = "Press B to lift a light object."; break;
         case 199 : texte = "Do you want to save your game?**                    ? YES ?*                      no  "; break;
         case 200 : texte = "Do you want to save your game?**                      yes  *                    ? NO ?"; break;
         case 201 : texte = "                    Level 1 :                                                                                   Faron Temple"; break;
@@ -349,7 +349,7 @@ void Texte::chercheText() {
         case 237 : texte = "I raise the maximum amount of bombs you can carry on, thanks to who???"; break;
         case 238 : texte = "I raise the maximum amount of arrows you can carry on, thanks to who???"; break;
         case 239 : texte = "I have enough rupees, disappear!"; break;
-        case 240 : texte = "You find the Golden Gloves!!!**Now you can lift heavy stones pressing C."; break;
+        case 240 : texte = "You find the Golden Gloves!!!**Now you can lift heavy stones pressing B."; break;
         case 241 : texte = "I let go through only maleficious creatures."; 
             if (gpJeu->getJoueur()->getOni()) idsuiv=243; break;
         case 242 : texte = "I let go through only beneficent creatures."; 
@@ -430,7 +430,7 @@ void Texte::chercheText() {
         case 286 : texte = "I will list all monsters in a new encyclopedia!**With your help, of course."; idsuiv=287; break;
         case 287 : texte = "Unfortunately I don't have pieces of heart anymore, but currency is my new currency. *I will pay you a good price for each new monster added in the encyclopedia."; idsuiv=288; break;
         case 288 : texte = "Come here regularly to get your winnings. If you can't carry all, I will keep the surplus for your next visit."; idsuiv=289; break;
-        case 289 : texte = "You just have to beat a new enemy to add him in the encyclopedia.*You can see it by pressing M!"; break;
+        case 289 : texte = "You just have to beat a new enemy to add him in the encyclopedia.*You can see it by pressing L1!"; break;
         case 290 : 
             texte = "Mmm... you are a curious specimen...";
             if (gpJeu->getJoueur()->getEnnemi(75) 
@@ -602,21 +602,21 @@ void Texte::chercheText() {
         case 391 : texte = "Link! It's Pit!!!*What are you doing???*Get a move on to the West Field!!!"; break;
         case 392 : texte = "Link, it's Zelda, congratulations!!!*Rauru is safe, for the moment...*Go to the Destiny Tower at the peak of the mountain and stop Ganon!"; break;
         case 393 : texte = "Tutorial : when the gauge of anger is full, you are transformed into Oni-Link.*Your weapon is extended and your strenght increases while your defense reduces."; idsuiv=394; break;
-        case 394 : texte = "As Oni-Link, you cannot use objects, but you can teleport yourself to the entry when you are in a dungeon by pressing T."; idsuiv=395; break;
+        case 394 : texte = "As Oni-Link, you cannot use objects, but you can teleport yourself to the entry when you are in a dungeon by pressing R2 and A."; idsuiv=395; break;
         case 395 : texte = "Each time Oni-Link defeats an enemy, your gauge decreases. When it's empty, Link regain his normal form."; break;
         case 396 : texte = "Team leader, creator and programmer :                                                                         Vincent Jouillat"; break;
-        case 397 : texte = "Scriptwriter and translator:                                                                                      Lobalùz"; break;
+        case 397 : texte = "Scriptwriter and translator:                                                                                      Lobalï¿½z"; break;
         case 398 : texte = "Help to the Graphics :                                                                                          Harvestland"; break;
-        case 399 : texte = "Help to the Graphics :                                                                                        Solène Jouillat"; break;
+        case 399 : texte = "Help to the Graphics :                                                                                        Solï¿½ne Jouillat"; break;
         case 400 : texte = "Illustrator :                                                                                                      Raiden"; break;
-        case 401 : texte = "You find the Termina map!!!**Press P when you are outside to see it."; break;
+        case 401 : texte = "You find the Termina map!!!**Press L2 when you are outside to see it."; break;
         case 402 : texte = "The legend forgets that after these events, the hero was brought down by a terrible curse..."; idsuiv=403; break;
         case 403 : texte = "Day by day, Link was transforming into an incontrollable and destructive powered monster named Oni-Link..."; idsuiv=404; break;
         case 404 : texte = "Banished from Hyrule, Link asked for advice from Princess Zelda."; idsuiv=405; break;
         case 405 : texte = "She indicated to him his last hope : a portal to a secret world..."; break;
         case 406 : texte = "Game saved."; break;
         case 407 : texte = "You don't need to drink this potion now."; break;
-        case 408 : texte = "HELP : Press F1 to see the help."; break;
+        case 408 : texte = "HELP : Press SELECT to see the help."; break;
         case 409 : texte = "Grrrr... But how could you escape from the world of the deads and arrive here???"; idsuiv=410; break;
         case 410 : texte = "Why do you persist to challenge me? *Even if you strike me down I will always return to life."; idsuiv=411; break;
         case 411 : texte = "Your quest is vain, abandon all hope! **Let's rock, baby!"; break;
@@ -732,22 +732,22 @@ void Texte::setTexte(int idTxt, int vx, int vy, int vw, int vh, bool cadr, bool 
 }
 
 void Texte::decoupeText() {
-    //compte le nombre de caractères possibles et largeur et en hauteur
+    //compte le nombre de caractï¿½res possibles et largeur et en hauteur
     int nbcol = (w-16)/6 -1;
     int nblig = (h-16)/16;
     int tailleMax = nbcol * nblig;
     int taille;
     
-    //parcours du texte à afficher; à chaque début de mot, 
-    //vérifie que le mot peut tenir sur la ligne
+    //parcours du texte ï¿½ afficher; ï¿½ chaque dï¿½but de mot, 
+    //vï¿½rifie que le mot peut tenir sur la ligne
     for (int i = 0; i < (int)texte.length(); i++) {
         
-        //supprime les espaces isolés en début de ligne
+        //supprime les espaces isolï¿½s en dï¿½but de ligne
         if (texte.at(i)==' ' && texte.at(i+1)!=' ' && i%nbcol == 0) texte.erase(i,1);
-        //recherche du début du prochain mot
+        //recherche du dï¿½but du prochain mot
         while(texte.at(i)==' ' && i < (int)texte.length()-1) i++;
         
-        //saute une ligne si trouve une étoile
+        //saute une ligne si trouve une ï¿½toile
         if (texte.at(i)=='*') {
             texte.erase(i,1);//replace(i, 1, " ");
             int nb = (nbcol)-(i%(nbcol));
@@ -755,7 +755,7 @@ void Texte::decoupeText() {
             continue;
         }
         
-        //si le mot dépasse
+        //si le mot dï¿½passe
         taille = tailleMot(i);
         if ((i%nbcol)+taille>nbcol) {
             if  (i < tailleMax) {
@@ -764,7 +764,7 @@ void Texte::decoupeText() {
                     texte.insert(((i/nbcol)+1)*nbcol-1,"--");
                     i = 1+((i/nbcol)+1)*nbcol;
                 }
-                //sinon, on ajoute des espaces pour faire commencer le mot à la ligne
+                //sinon, on ajoute des espaces pour faire commencer le mot ï¿½ la ligne
                 else while((i%nbcol) != 0) {texte.insert(i," "); i++;}
             }
         }
@@ -813,35 +813,35 @@ void Texte::afficheLettre(SDL_Surface* gpScreen, char c, int vx, int vy) {
             
     //majuscules A-Z
     if(val>=65 && val<=90) {src.x=6+16*((val-65)%10); src.y=2+16*((val-65)/10);}   
-    // ç
+    // ï¿½
     if(val==-25) {src.x=148;src.y=34;}
-    // é
+    // ï¿½
     if(val==-23) {src.x=100;src.y=84;}
-    // ê
+    // ï¿½
     if(val==-22) {src.x=116;src.y=84;}
-    // è
+    // ï¿½
     if(val==-24) {src.x=132;src.y=84;}
-    // ë
+    // ï¿½
     if(val==-21) {src.x=132;src.y=151;}
-    // à
+    // ï¿½
     if(val==-32) {src.x=148;src.y=84;}
-    // â
+    // ï¿½
     if(val==-30) {src.x=148;src.y=103;}
-    // ä
+    // ï¿½
     if(val==-28) {src.x=148;src.y=135;}
-    // î
+    // ï¿½
     if(val==-18) {src.x=84;src.y=119;}
-    // ï
+    // ï¿½
     if(val==-17) {src.x=116;src.y=151;}
-    // û
+    // ï¿½
     if(val==-5) {src.x=84;src.y=103;}
-    // ù
+    // ï¿½
     if(val==-7) {src.x=148;src.y=151;}
-    // ü
+    // ï¿½
     if(val==-4) {src.x=116;src.y=135;}
-    // ö
+    // ï¿½
     if(val==-10) {src.x=132;src.y=135;}
-    // ô
+    // ï¿½
     if(val==-12) {src.x=148;src.y=119;}
             
     //ponctuation
