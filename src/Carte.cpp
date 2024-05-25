@@ -35,7 +35,7 @@ void Carte::init() {
         SDL_BlitSurface(tmp, &src, image, &dst);
         SDL_FreeSurface(tmp);
         
-        //si en t�l�portation
+        //si en t�l�portation
         if (gpJeu->getKeyboard()->getMode() == 22) {
             gpJeu->getKeyboard()->setTelep(0); return;}
         
@@ -169,7 +169,7 @@ void Carte::initEtage() {
     SDL_BlitSurface(tmp, &src, image, &dst);
     SDL_FreeSurface(tmp);
     
-    //�tage de link
+    //�tage de link
     tmp = IMG_Load("data/images/carte/link.png");
     SDL_SetColorKey(tmp,SDL_SRCCOLORKEY,SDL_MapRGB(tmp->format,0,0,255));
     src.h = 12; src.w = 14;src.x = 0;src.y=0;
@@ -260,7 +260,7 @@ void Carte::initCarte() {
     
     if (gpJoueur->getCle(zone-15,1)) initBoussole();
     
-    //�tage de link
+    //�tage de link
     if (gpJeu->getMonde()->etage() == levely && ((zone-15)!=11 || levely==0)) {
         tmp = IMG_Load("data/images/carte/link.png");
         SDL_SetColorKey(tmp,SDL_SRCCOLORKEY,SDL_MapRGB(tmp->format,0,0,255));
@@ -909,20 +909,20 @@ void Carte::initName() {
     int zone = gpJeu->getZone();
     //message
     switch (zone-15) {
-        case 0 : gpJeu->affiche(image, "Faron Temple",128,25); break;
-        case 1 : gpJeu->affiche(image, "Ruto Mine",128,25); break;
-        case 2 : gpJeu->affiche(image, "Ordona Temple",128,25); break;
-        case 3 : gpJeu->affiche(image, "Haunted Mansion",128,25); break;
-        case 4 : gpJeu->affiche(image, "Eldin Temple",128,25); break;
-        case 5 : gpJeu->affiche(image, "Monsters' Colosseum",128,25); break;
-        case 6 : gpJeu->affiche(image, "Lanayru Temple",128,25); break;
-        case 7 : gpJeu->affiche(image, "Zelda Temple",128,25); break;
-        case 8 : gpJeu->affiche(image, "Din Temple",128,25); break;
-        case 9 : gpJeu->affiche(image, "Nayru Temple",128,25); break;
-        case 10 : gpJeu->affiche(image, "Farore Temple",128,25); break;
-        case 11 : gpJeu->affiche(image, "Xanto Temple",128,25); break;
-        case 12 : gpJeu->affiche(image, "Secret Temple",128,25); break;
-        case 13 : gpJeu->affiche(image, "Destiny Tower",128,25); break;
+        case 0 : gpJeu->affiche(image, "Храм Фарона",128,25); break;
+        case 1 : gpJeu->affiche(image, "Шахта Руто",128,25); break;
+        case 2 : gpJeu->affiche(image, "Храм Ордоны",128,25); break;
+        case 3 : gpJeu->affiche(image, "Особняк с привидениями",128,25); break;
+        case 4 : gpJeu->affiche(image, "Храм Элдин",128,25); break;
+        case 5 : gpJeu->affiche(image, "Колизей Чудовищ",128,25); break;
+        case 6 : gpJeu->affiche(image, "Храм Ланайру",128,25); break;
+        case 7 : gpJeu->affiche(image, "Храм Зельды",128,25); break;
+        case 8 : gpJeu->affiche(image, "Храм Дин",128,25); break;
+        case 9 : gpJeu->affiche(image, "Храм Нейрю",128,25); break;
+        case 10 : gpJeu->affiche(image, "Храм Фароре",128,25); break;
+        case 11 : gpJeu->affiche(image, "Храм Занта",128,25); break;
+        case 12 : gpJeu->affiche(image, "Тайный Храм",128,25); break;
+        case 13 : gpJeu->affiche(image, "Башня Судьбы",128,25); break;
     }
 }
 
@@ -945,7 +945,7 @@ void Carte::draw(SDL_Surface* gpScreen) {
     
     SDL_BlitSurface(image, &src, gpScreen, &dst);
     
-    if (gpJeu->getKeyboard()->getMode() == 22) { //si en t�l�portation
+    if (gpJeu->getKeyboard()->getMode() == 22) { //si en t�l�portation
         
         
         

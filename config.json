@@ -1,9 +1,0 @@
-{
-"label":"Zelda OLB",
-"icon":"icon.png",
-"iconsel":"icon.png",
-"launch":"launch.sh",
-"useswap":1,
-"noaudiofix":1,
-"description":"Zelda - Oni Link Begins"
-}

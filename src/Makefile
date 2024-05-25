@@ -4,8 +4,8 @@
 #--------------------------------------------------------------
 
 PREFIX  = /usr/local
-CFLAGS  = -I../../SDL_gfx-1.2-master -I/opt/miyoomini-toolchain/arm-linux-gnueabihf/libc/usr/include/SDL -O2 -Wall
-LDFLAGS = -L../../SDL_gfx-1.2-master/.libs -lSDL_gfx -lSDL_image -lSDL_mixer -lSDL
+CFLAGS  = -I../SDL_gfx-1.2-master -I../utfcpp/source -I/opt/miyoomini-toolchain/arm-linux-gnueabihf/libc/usr/include/SDL -O2 -Wall
+LDFLAGS = -L../SDL_gfx-1.2-master/.libs -L/opt/miyoomini-toolchain/arm-linux-gnueabihf/libc/usr/lib -lSDL_gfx -lSDL_image -lSDL_mixer -lSDL_ttf -lSDL
 
 CC = arm-linux-gnueabihf-g++
 RM = rm -f
